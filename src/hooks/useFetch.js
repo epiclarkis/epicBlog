@@ -9,27 +9,25 @@ const useFetch = (url) => {
         const controller = new AbortController()
         const signal = controller.signal
         
-        setTimeout(() => {
-            fetch(url, {signal})
-                .then(res => {
-                    if (!res.ok) {
-                        throw Error('Could not fetch data for that resource')
-                    }
-                    return res.json()
-                })
-                .then((data) => {
-                    setData(data)
-                    setIsLoading(false)
-                    setError(null)
-                })
-                .catch(err => {
-                    if (err.name === 'AbortError') {
-                        console.log('fetch aborted')
-                    }
-                    setIsLoading(false)
-                    setError(err.message)
-                })
-        },1000)
+        fetch(url, {signal})
+            .then(res => {
+                if (!res.ok) {
+                    throw Error('Could not fetch data for that resource')
+                }
+                return res.json()
+            })
+            .then((data) => {
+                setData(data)
+                setIsLoading(false)
+                setError(null)
+            })
+            .catch(err => {
+                if (err.name === 'AbortError') {
+                    console.log('fetch aborted')
+                }
+                setIsLoading(false)
+                setError(err.message)
+            })
 
         return () => controller.abort()
     }, [url])
