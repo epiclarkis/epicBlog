@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My first blog",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste quasi, beatae amet consequatur assumenda, culpa rerum dolor porro quidem, magnam delectus itaque nulla? Ex illo neque voluptates eum fuga?",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "My second blog",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste quasi, beatae amet consequatur assumenda, culpa rerum dolor porro quidem, magnam delectus itaque nulla? Ex illo neque voluptates eum fuga?",
+      "author": "yoshi",
+      "id": 2
+    },
+    {
+      "title": "My third blog",
+      "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste quasi, beatae amet consequatur assumenda, culpa rerum dolor porro quidem, magnam delectus itaque nulla? Ex illo neque voluptates eum fuga?",
+      "author": "luigi",
+      "id": 3
+    }
+  ]
+}
