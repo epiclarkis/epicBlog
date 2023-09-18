@@ -1,0 +1,107 @@
+@import 'normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Nanum+Gothic&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 768px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 15px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #25d064;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.links {
+    margin-left: auto;
+}
+
+.links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333333;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.blog-preview {
+    outline: 1px solid #333333;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 5px 5px #888888;
+}
+
+.blog-preview:hover {
+    cursor: pointer;
+    outline: 3px solid #25d064;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.blog-preview h2 {
+    color: #25d064;
+}
+
+.blog-preview p {
+    color: #555555;
+}
+
+.blog-preview a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > * {
+    margin-bottom: 5px;
+}
+
+form > button {
+    margin-top: 5px;
+}
+
+.delete-blog,
+.edit-blog,
+.save-blog,
+.cancel-blog {
+    margin: 15px 15px 0 0;
+    width: 100px;
+}
+
+.error {
+    color: #ea4343;
+}
+
+.edit-mode {
+    background-color: #dcdcdc;
+    padding: 7px;
+    display: block;
+    margin-top: 5px;
+}
+
+.create-mode {
+    background-color: #dcdcdc;
+    border: none;
+    outline: 1px solid #333333;
+    padding: 7px;
+}
